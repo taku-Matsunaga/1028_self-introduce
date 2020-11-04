@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #707070;
+  font-family: 'Khula', 'Noto Sans JP', sans-serif;
+  font-feature-settings: "palt";
+  letter-spacing: 0.025em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// 左側
+.box-left {
+  left: 0;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  background-color: #dcdcdc;
+
+  .title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+}
+
+// 右側
+.box-right {
+  right: 0;
+
+  .box-img {
+    img {
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
+
+.box-right__size {
+  width: 50%;
+  margin: 0 0 0 auto;
+}
+
+// 経歴
+.career {
+  .box {
+    .career-h2 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    p {
+      width: 80%;
+      margin: 50px;
+      line-height: 1.5;
+    }
+
+    .career-img {
+      width: 80%;
+      margin: 0 auto;
+
+      img {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+// スキル
+.skills {
+  margin-top: 50px;
+}
+
+.skill {
+  background-color: #b0c4de;
+  // position: absolute;
+  // margin-top: 50px;
+  display: flex;
+
+  .skill-box {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    // position: relative;
+    border-radius: 30px;
+    // display: flex;
+
+    .skill-container {
+
+      .skill-h2 {
+        text-align: center;
+        padding: 50px 0;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        li {
+          padding: 20px 20px;
+          display: block;
+          text-align: center;
+
+          .fab {
+            font-size: 8rem;
+          }
+
+          p {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #fff;
+  height: 100px;
+
+  .small {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 100px;
+  }
+}
